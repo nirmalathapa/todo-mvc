@@ -2,13 +2,7 @@ import React from "react";
 import TodoItem from "./TodoItem";
 
 const TodoList = props => {
-  const {
-    todos,
-    handleOnchecked,
-    handleOnDelete,
-    handleOnEdit,
-    handleOnClear
-  } = props;
+  const { todos, handleOnchecked, handleOnDelete, handleOnEdit } = props;
   return (
     <main>
       <h1>Todo List</h1>
@@ -24,9 +18,6 @@ const TodoList = props => {
           />
         ))}
       </ul>
-      <button className="btn btn-clear" onClick={handleOnClear}>
-        Clear All
-      </button>
     </main>
   );
 };
