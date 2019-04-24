@@ -2,7 +2,7 @@
 Simple todo app to creat a list of things that needs to be done with the functionality of editing and deleting. 
 
 
-## Installation and run the app
+## How to run the app in local 
 
 ````
 npm install
