@@ -4,7 +4,7 @@ const NewTodo = props => {
   const { title, handleOnChange, handleOnSubmit, edit } = props;
   return (
     <header>
-      <h1>Add Todo</h1>
+      <h1>Things to todo</h1>
       <form onSubmit={handleOnSubmit} className="wrap">
         <input
           type="text"
@@ -17,7 +17,7 @@ const NewTodo = props => {
           className={edit ? "btn btn-edit" : "btn btn-submit"}
         >
           {" "}
-          {edit ? "edit todo" : "add todo"}
+          {edit ? "edit todo" : "Add todo"}
         </button>
       </form>
     </header>

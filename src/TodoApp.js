@@ -3,16 +3,28 @@ import uuid from "uuid";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
 import "./App.css";
+import TodoClear from "./components/TodoClear";
 
 class TodoApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      todos: [],
+      todos: [
+        {
+          title: "Finish incomplete projects"
+        },
+        {
+          title: "Make portfolio from scratch"
+        },
+        {
+          title: "Take 5 mins chess break"
+        }
+      ],
       title: "",
       id: uuid(),
       edit: false,
-      done: false
+      done: false,
+      todosToShow: "All"
     };
   }
   handleOnChange = e => {
@@ -38,7 +50,8 @@ class TodoApp extends Component {
       title: "",
       id: uuid(),
       edit: false,
-      done: false
+      done: false,
+      todosToShow: "All"
     });
   };
 
@@ -73,6 +86,7 @@ class TodoApp extends Component {
       todos: []
     });
   };
+
   render() {
     return (
       <div className="main-container">
@@ -90,8 +104,9 @@ class TodoApp extends Component {
           done={this.state.done}
           handleOnDelete={this.handleOnDelete}
           handleOnEdit={this.handleOnEdit}
-          handleOnClear={this.handleOnClear}
+          todosToShow={this.todosToShow}
         />
+        <TodoClear handleOnClear={this.handleOnClear} />
       </div>
     );
   }
