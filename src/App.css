@@ -4,6 +4,7 @@
 }
 body{
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 ::placeholder{
   opacity: 0.2;
@@ -11,17 +12,19 @@ body{
 
 h1, h2, h3{
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 2rem 0;
-  color: darkcyan
+  margin: 1rem 0;
+  color: darkcyan;  
 }
 h4{
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-left: auto;
   width: 22rem;
- color: rgb(73, 73, 73) 
+  color: rgb(73, 73, 73);
+  font-weight: 100;
+  letter-spacing: 1px;
 }
+
 
 ul{
   margin: 0;
@@ -39,7 +42,7 @@ li{
   color: rgb(97, 97, 97);
   margin-bottom: 10px;
   border: 1px solid darkcyan;
-  border-radius: 5px;
+  border-radius: 5px;    
 }
 .main-container{
   margin: 0 auto;
@@ -71,12 +74,13 @@ li{
   background: rgb(7, 155, 235);
   color: white;  
   border: 1px solid #013ca4;  
+  width: 22rem;
 }
 .done{
   text-decoration: line-through;      
 }
 main, header{
-  margin-top: 40px;
+  margin-top: 20px;
   width: 30rem;
 }
 label{
@@ -121,4 +125,11 @@ input[type="text"]:focus{
 }
 .edit, .delete{
   cursor: pointer;
+}
+footer{
+  display: flex;  
+  margin: 1rem 0;
+}
+.btn-footer{
+  margin: 0 0 0 10px;
 }
