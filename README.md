@@ -1,4 +1,4 @@
-# Todo MVC React
+# Todo Create React App
 Simple todo app to creat a list of things that needs to be done with the functionality of editing and deleting. 
 
 
